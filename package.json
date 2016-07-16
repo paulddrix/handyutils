@@ -1,0 +1,18 @@
+{
+  "name": "handyutils",
+  "version": "0.1.5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulddrix/handyutils.git"
+  },
+  "description": "a set of tool to aid development in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Diederichs",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^7.0.1"
+  }
+}
