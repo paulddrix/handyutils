@@ -8,7 +8,7 @@
   "description": "a set of tool to aid development in nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "exit 1"
+    "test": "mocha"
   },
   "author": "Paul Diederichs",
   "license": "ISC",
