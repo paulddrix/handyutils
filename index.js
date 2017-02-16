@@ -11,12 +11,11 @@ const fs = require('fs');
  */
 exports.debug = (title, anydatatype='') => {
   if (process.env.DEBUG) {
-    let output = '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
-    output += title;
-    output += '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
-    output += anydatatype;
-    output += '\n===========================================\n\n';
-    console.log(output);
+    let outputTitle = '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
+    outputTitle += title;
+    outputTitle += '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
+    let outputClose = '\n===========================================\n\n';
+    console.log(outputTitle,anydatatype,outputClose);
   }
 }
 /**
@@ -73,13 +72,12 @@ exports.isEmpty = (variable) => {
  */
  exports.debugNLog = (title, anydatatype='', logType) => {
    let logPath = './logs'
-   let output = '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
-   output += title;
-   output += '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
-   output += anydatatype;
-   output += '\n===========================================\n\n';
+   let outputTitle = '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
+    outputTitle += title;
+    outputTitle += '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
+    let outputClose = '\n===========================================\n\n';
    if (process.env.DEBUG) {
-     console.log(output);
+     console.log(outputTitle,anydatatype,outputClose);
    }
    if(process.env.LOG_MODE) {
      fs.writeFile(`${logPath}/${logType}.txt`, output, 'utf8', (err)=>{
