@@ -1,6 +1,6 @@
 {
   "name": "handyutils",
-  "version": "0.1.5",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paulddrix/handyutils.git"
@@ -12,6 +12,5 @@
   },
   "author": "Paul Diederichs",
   "license": "ISC",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
