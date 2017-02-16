@@ -8,11 +8,10 @@
   "description": "a set of tool to aid development in nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 1"
   },
   "author": "Paul Diederichs",
   "license": "ISC",
   "dependencies": {
-    "jsonwebtoken": "^7.0.1"
   }
 }
