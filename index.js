@@ -11,11 +11,12 @@ const fs = require('fs');
  */
 exports.debug = (title, anydatatype='') => {
   if (process.env.DEBUG) {
-    let outputTitle = '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
-    outputTitle += title;
-    outputTitle += '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
-    let outputClose = '\n===========================================\n\n';
-    console.log(outputTitle,anydatatype,outputClose);
+    let output = '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
+    output += title;
+    output += '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
+    output += anydatatype;
+    output += '\n===========================================\n\n';
+    console.log(output);
   }
 }
 /**
