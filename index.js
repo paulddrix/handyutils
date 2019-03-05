@@ -14,7 +14,7 @@ exports.debug = (title, anydatatype='') => {
     let titleOutput = '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
     titleOutput += title;
     titleOutput += '\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n';
-    closeOutput += '\n===========================================\n\n';
+    let closeOutput = '\n===========================================\n\n';
     console.log(titleOutput);
     console.log(anydatatype);
     console.log(closeOutput);
